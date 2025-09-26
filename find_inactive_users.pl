@@ -237,11 +237,11 @@ sub help
 	print "                          given date\n";
 	print "--delete <OPTION>       : Deletes the found users from database.\n";
 	print "                          Option can be:\n";
-	print "                          LAST:  Deletes all users who haven't edited since\n";
+	print "                          last:  Deletes all users who haven't edited since\n";
 	print "                                 the given date with --date\n";
-	print "                          EDITS: Deletes all users who have edited less then\n";
+	print "                          edits: Deletes all users who have edited less then\n";
 	print "                                 the given edits with --edits\n";
-	print "                          BOTH:  Deletes all users who have edited less then\n";
+	print "                          both:  Deletes all users who have edited less then\n";
 	print "                                 the given edits with --edits since the\n";
 	print "                                 the given date with --date\n";
 	print "--dry                   : Do a dry run and do not delete anything from\n";
@@ -251,7 +251,7 @@ sub help
 	print "--file <FILE>           : Read file and delete all users with 1 in the column\n";
 	print "                          'to_be_deleted'. File MUST be exactly in the format\n";
 	print "                          no;username;email;last epoch;last human;edits;to_be_deleted\n";
-	print "                          <INTEGER>. The first line must be the header line.\n";
+	print "                          The first line must be the header line.\n";
 	print "--help                  : Prints out this help page.\n";
 
 }
