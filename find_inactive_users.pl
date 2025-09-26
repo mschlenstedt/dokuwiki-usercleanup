@@ -228,13 +228,13 @@ sub help
 	print "Usage: $0 [OPTION]\n";
 	print "Lists inactive users and optionally deletes them from database.\n";
 	print "Options:\n";
-  print "--conffolder <FOLDER>   : Full or relative path to Dokuwiki's conf folder.\n";
-  print "                          Defaults to ./conf.\n";
+	print "--conffolder <FOLDER>   : Full or relative path to Dokuwiki's conf folder.\n";
+	print "                          Defaults to ./conf.\n";
 	print "--datafolder <FOLDER>   : Full or relative path to Dokuwiki's data folder.\n";
-  print "                          Defaults to ./data.\n";
-  print "--date <YEAR-MONTH-DAY> : Counts only edits prior or euqal the given date\n";
-  print "                        : or find users whose last activity is older then the\n";
-  print "                          given date\n";
+	print "                          Defaults to ./data.\n";
+	print "--date <YEAR-MONTH-DAY> : Counts only edits prior or euqal the given date\n";
+	print "                        : or find users whose last activity is older then the\n";
+	print "                          given date\n";
 	print "--delete <OPTION>       : Deletes the found users from database.\n";
 	print "                          Option can be:\n";
 	print "                          LAST:  Deletes all users who haven't edited since\n";
@@ -245,13 +245,13 @@ sub help
 	print "                                 the given edits with --edits since the\n";
 	print "                                 the given date with --date\n";
 	print "--dry                   : Do a dry run and do not delete anything from\n";
-  print "                          database\n";
-  print "--edits <INTEGER>       : Find users whose total file edits are below\n";
+	print "                          database\n";
+	print "--edits <INTEGER>       : Find users whose total file edits are below\n";
 	print "                          <INTEGER>.\n";
-  print "--file <FILE>           : Read file and delete all users with 1 in the column\n";
+	print "--file <FILE>           : Read file and delete all users with 1 in the column\n";
 	print "                          'to_be_deleted'. File MUST be exactly in the format\n";
 	print "                          no;username;email;last epoch;last human;edits;to_be_deleted\n";
 	print "                          <INTEGER>. The first line must be the header line.\n";
-  print "--help                  : Prints out this help page.\n";
+	print "--help                  : Prints out this help page.\n";
 
 }
