@@ -143,7 +143,7 @@ sub findchanges
 			if ( $userdata{$fields[4]}{'last'} < $fields[0] ) {
 				$userdata{$fields[4]}{'last'} = $fields[0];
 			}
-			if ($checkdate) {
+			if ($checkdate && $delete ne "both") {
 				$userdata{$fields['4']}{'count'}++ if $fields[0] >= $date;
 			} else {
 				$userdata{$fields['4']}{'count'}++;
